@@ -267,8 +267,25 @@
 
   const clearCanvas = element => {
     let canvas = element.querySelector("canvas");
-    let canvasContext = canvas.getContext("2d");
-    canvasContext.clearRect(0, 0, canvas.width, canvas.height);
+
+    if (null !== canvas) {
+      canvas.width = canvas.width;
+    }
+  };
+  /**
+   * @param {*} element 
+   * @returns
+   */
+
+
+  const getSignature = element => {
+    let canvas = element.querySelector("canvas");
+
+    if (null !== canvas) {
+      return canvas.toDataURL();
+    }
+
+    return null;
   };
   /**
    * @param {*} element 
@@ -294,6 +311,13 @@
         Array.prototype.forEach.call(element.length ? element : [element], item => {
           clearCanvas(item);
         });
+      },
+      getSignature: () => {
+        let signatures = [];
+        Array.prototype.forEach.call(element.length ? element : [element], item => {
+          signatures.push(getSignature(item));
+        });
+        return signatures;
       }
     };
   };

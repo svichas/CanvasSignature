@@ -9,6 +9,7 @@
 
     <div class="signature"></div>
     <button id="clear">Clear</button>
+    <button id="getSignature">Get signature</button>
 
     <script src="../dist/canvassignature.js"></script>
     <script>
@@ -18,9 +19,14 @@
         
 
         document.getElementById("clear").onclick = clearSignature;
+        document.getElementById("getSignature").onclick = getSignature;
 
         function clearSignature() {
             signature.clear();
+        }
+
+        function getSignature() {
+            console.log(signature.getSignature());
         }
         
 
