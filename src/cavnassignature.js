@@ -30,10 +30,10 @@ const assignToElement = (element, options) => {
         // attach canvas events for both desktop and mobile devices
         canvas.addEventListener("touchstart", startDraw, { passive: false });
         canvas.addEventListener("touchmove", drawMove, { passive: false });
-        canvas.addEventListener("touchend", endDraw);
+        document.addEventListener("touchend", endDraw);
         canvas.addEventListener("mousedown", startDraw);
         canvas.addEventListener("mousemove", drawMove);
-        canvas.addEventListener("mouseup", endDraw);
+        document.addEventListener("mouseup", endDraw);
     }
 
     /**

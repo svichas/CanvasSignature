@@ -194,10 +194,10 @@
       canvas.addEventListener("touchmove", drawMove, {
         passive: false
       });
-      canvas.addEventListener("touchend", endDraw);
+      document.addEventListener("touchend", endDraw);
       canvas.addEventListener("mousedown", startDraw);
       canvas.addEventListener("mousemove", drawMove);
-      canvas.addEventListener("mouseup", endDraw);
+      document.addEventListener("mouseup", endDraw);
     };
     /**
      * @param {*} event 
