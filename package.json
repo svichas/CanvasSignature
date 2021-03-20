@@ -1,6 +1,6 @@
 {
-  "name": "canvassignature",
-  "version": "1.0.0",
+  "name": "canvas-signature",
+  "version": "0.5.0",
   "description": "",
   "main": "dist/canvassignature.js",
   "dependencies": {
