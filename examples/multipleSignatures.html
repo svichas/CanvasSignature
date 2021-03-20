@@ -9,7 +9,12 @@
 <body>
     
     <div class="signatureWrap">
-        Signature:
+        Signature 1:
+        <div class="signature"></div>
+    </div>
+
+    <div class="signatureWrap">
+        Signature 2:
         <div class="signature"></div>
     </div>
 
@@ -18,7 +23,7 @@
 
     <div>
         <button id="clear">Clear</button>
-        <button id="getSignature">Get signature</button>
+        <button id="getSignature">Get signatures</button>
     </div>
 
     <br/>
@@ -29,8 +34,8 @@
     <script src="../dist/canvassignature.js"></script>
     <script>
         var signature = CanvasSignature(document.querySelectorAll(".signature"), { 
-            width: 300,
-            height: 150,
+            width: 500,
+            height: 250,
             strokeWidth: 2
         });
 
@@ -40,15 +45,18 @@
         function clearSignature() {
             signature.clear();
         }
-        
+
         function getSignature() {
-            var list = document.querySelector(".signatureList");
+            var signatures = signature.getSignatures(),
+                list = document.querySelector(".signatureList");
 
             list.innerHTML = "";
-
-            var sign = document.createElement("img");
-            sign.src = signature.getSignature();
-            list.appendChild(sign);
+            
+            signatures.map((item) => {
+                var sign = document.createElement("img");
+                sign.src = item;
+                list.appendChild(sign);
+            });
         }
     </script>
     

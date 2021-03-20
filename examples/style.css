@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button,input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signatureWrap {
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.signature {
+    border: 1px dashed #c0c0c0;
+    display: block;
+}
+
+.signatureList {
+    border: 1px solid #222;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.signatureList img {
+    margin: 0 5px;
+    border: 1px dashed #c0c0c0;
+}
