@@ -1,0 +1,41 @@
+{
+  "name": "canvassignature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/canvassignature.js",
+  "dependencies": {
+    "flagged-respawn": "^1.0.1",
+    "flush-write-stream": "^1.1.1",
+    "for-in": "^1.0.2",
+    "object.defaults": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "rollup": "^2.42.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svichas/CanvasSignature.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svichas/CanvasSignature/issues"
+  },
+  "homepage": "https://github.com/svichas/CanvasSignature#readme"
+}

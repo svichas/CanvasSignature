@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature</title>
+</head>
+<body>
+
+    <div class="signature"></div>
+    <button id="clear">Clear</button>
+
+    <script src="../dist/canvassignature.js"></script>
+    <script>
+        var signature = CanvasSignature(document.querySelectorAll(".signature"), {
+
+        });
+        
+
+        document.getElementById("clear").onclick = clearSignature;
+
+        function clearSignature() {
+            signature.clear();
+        }
+        
+
+    </script>
+    
+</body>
+</html>
