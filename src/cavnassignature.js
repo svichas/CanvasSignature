@@ -91,8 +91,8 @@ const assignToElement = (element, options) => {
             event.clientX &&
             event.clientY
         ) {
-            position.x = event.clientX - canvas.offsetLeft;
-            position.y = event.clientY - canvas.offsetTop; 
+            position.x = event.pageX - canvas.offsetLeft;
+            position.y = event.pageY - canvas.offsetTop; 
         }
 
         return position;
