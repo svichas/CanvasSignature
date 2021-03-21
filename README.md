@@ -11,7 +11,9 @@ CanvasSignature is a library to create canvas for signatures for both desktop an
 
 <div class="signature"></div>
 <script>
-var signature = CanvasSignature(document.querySelectorAll(".signature"), { });
+var signature = CanvasSignature(document.querySelectorAll(".signature"), {
+    // options...
+ });
 </script>
 ```
 
@@ -29,7 +31,9 @@ var signature = CanvasSignature(document.querySelectorAll(".signature"), { });
 ### 3. Methods
 
 ```js
-var signature = CanvasSignature(document.querySelectorAll(".signature"), { });
+var signature = CanvasSignature(document.querySelectorAll(".signature"), { 
+    // options...
+});
 
 // Clear signature canvas
 signature.clear();
